@@ -533,6 +533,10 @@ body.cover-ready {
   cursor: url("cursor.png") 300 90, auto;
 }
 
+.selection-skip[hidden] {
+  display: none !important;
+}
+
 .selection-skip img {
   display: block;
   width: 100%;
@@ -1083,7 +1087,11 @@ body.cover-ready {
 
   .selection-skip {
     display: block;
+    top: 1%;
+    right: auto;
     bottom: 5.2%;
+    left: 50%;
+    transform: translateX(-50%);
     width: min(35%, 9rem);
   }
 
